@@ -1,0 +1,17 @@
+.brand b:lang(zh-HK) { letter-spacing: .02em; font-family: inherit; }
+.header-actions { display: flex; align-items: center; justify-content: flex-end; gap: 12px; }
+.language-toggle { min-height: 44px; padding: 5px 8px; background: transparent; border-radius: 6px; color: var(--secondary); white-space: nowrap; }
+.language-toggle:hover { background: var(--soft); color: var(--blue); }
+html:lang(en) .topic-title { align-items: flex-start; flex-direction: column; gap: 4px; line-height: 1.25; }
+html:lang(en) .hero h1 { letter-spacing: -.065em; text-wrap: balance; }
+html:lang(en) .reading p { line-height: 1.78; max-width: 72ch; }
+@media (max-width: 650px) {
+  .header-actions { gap: 5px; }
+  .saves span { display: none; }
+  .saves { width: 36px; justify-content: center; }
+  .mast { height: auto; min-height: 62px; gap: 5px; flex-wrap: wrap; padding-top: 7px; padding-bottom: 7px; }
+  .brand span { display: none; }
+  html:lang(en) .hero h1 { max-width: calc(100% - 95px); font-size: clamp(2rem, 6.8vw, 2.65rem); }
+  .topic-title { overflow-wrap: anywhere; }
+  .language-toggle { padding: 4px; font-size: .93rem; }
+}

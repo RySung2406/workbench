@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8fafc">
+<meta name="description" content="Workbench brings together study notes, projects and tools for automotive engineering, robotics, DSE M2 and mechanical engineering.">
+<title>Workbench</title>
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="interface.css">
+
+<script defer src="interface.js"></script>
+<script defer src="catalog.js"></script>
+<script defer src="catalog-en.js"></script>
+<script defer src="materials.js"></script>
+<script defer src="materials-en.js"></script>
+
+<script defer src="tools.js"></script>
+
+<script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap mast">
+<a class="brand" href="#home" aria-label="Workbench home"><img src="assets/mark.svg" width="33" height="36" alt=""><b lang="en">Workbench</b></a>
+<div class="header-actions">
+<a class="saves" href="#saved" aria-label="Bookmarks"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M6.5 4h11v16l-5.5-4-5.5 4z"/></svg><span>Bookmarks</span></a>
+<button class="language-toggle" id="language-toggle" type="button" lang="zh-HK" aria-label="切換至繁體中文">繁體中文</button>
+
+</div>
+</div></header>
+<main class="wrap" id="main" tabindex="-1">
+<section class="hero" aria-label="Search notes, projects and tools">
+<div class="hero-content">
+<h1>What are you studying?</h1>
+<form class="search" id="search-form" role="search">
+<svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.6"/><path d="m16 16 5 5"/></svg>
+<input id="search" type="search" autocomplete="off" aria-label="Search notes, projects and tools" placeholder="Search notes, projects, tools…">
+<kbd aria-hidden="true">/</kbd>
+<button type="submit">Search</button></form>
+<div class="quick" aria-label="Quick searches"><a href="#search/Gear%20ratio">Gear ratio</a><a href="#search/Vectors">Vectors</a><a href="#search/Robotics">Robotics</a></div>
+</div>
+<div class="plate"><img src="assets/drivetrain.webp" alt="" width="1200" height="800" fetchpriority="high"></div>
+</section>
+<nav id="sections" aria-label="Main navigation"></nav>
+<div id="view"></div>
+</main>
+<noscript>Enable JavaScript to search notes and use the engineering tools. 請啟用 JavaScript 以使用搜尋和工程小工具。</noscript>
+</body>
+</html>
